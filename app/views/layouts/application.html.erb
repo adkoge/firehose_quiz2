@@ -13,15 +13,23 @@
 		</div>
 
 		<br />
-		
+
 		<div class="col-xs-5">
 			<%= link_to 'Contribute', new_athlete_path %>
 		</div>
 	</header>
-
+<hr />
 <br class="clear" />
 
-<%= yield %>
+<div class="container">
+ <% if flash[:error].present? %>
+      <div class="col-xs-10 col-xs-offset-1 alert alert-danger">
+        <%= flash[:error] %>
+      </div>
+    <% end %>
+	<%= yield %>
+</div>
 
+</div>
 </body>
 </html>
