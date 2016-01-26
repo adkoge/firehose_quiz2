@@ -7,6 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+		<div>
+			<%= link_to 'Home', athletes_path %>
+		</div>
+
+		<br />
+		
+		<div class="col-xs-5">
+			<%= link_to 'Contribute', new_athlete_path %>
+		</div>
+	</header>
+
+<br class="clear" />
 
 <%= yield %>
 

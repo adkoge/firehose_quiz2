@@ -1,0 +1,8 @@
+<h1>Enter Your Favorite Athlete And Their Sport</h1>
+<br />
+<%= simple_form_for @athlete do |f| %>
+  <%= f.input :person %>
+  <%= f.input :sport %>
+ <br />
+  <%= f.submit 'Submit', class: 'btn btn-primary' %>
+<% end %>
