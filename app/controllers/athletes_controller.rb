@@ -1,6 +1,6 @@
 class AthletesController < ApplicationController
 	def index
-		@athlete = Athlete.order("RANDOM()").first
+		@athlete = Athlete.order("created_at").last
 	end
 
 	def new
